@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [test-parameter]">
+  <test thread-count="1" name="example1(failed)">
+    <groups>
+      <run>
+        <include name="A"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dataparameter.dataprvdr.dataprovidermultiplewithitestcontest">
+        <methods>
+          <include name="testMethodA" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.dataparameter.dataprvdr.dataprovidermultiplewithitestcontest -->
+    </classes>
+  </test> <!-- example1(failed) -->
+  <test thread-count="1" name="example2(failed)">
+    <groups>
+      <run>
+        <include name="B"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dataparameter.dataprvdr.dataprovidermultiplewithitestcontest">
+        <methods>
+          <include name="testMethodB" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.dataparameter.dataprvdr.dataprovidermultiplewithitestcontest -->
+    </classes>
+  </test> <!-- example2(failed) -->
+</suite> <!-- Failed suite [test-parameter] -->

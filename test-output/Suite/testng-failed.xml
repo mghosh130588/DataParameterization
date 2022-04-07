@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
+    <groups>
+      <run>
+        <include name="A"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.dataparameter.dataprvdr.dataprovidermultiplewithitestcontest">
+        <methods>
+          <include name="testMethodA"/>
+          <include name="launchchrome"/>
+          <include name="openurl"/>
+          <include name="afterteat"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.dataparameter.dataprvdr.dataprovidermultiplewithitestcontest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
